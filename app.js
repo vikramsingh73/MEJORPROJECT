@@ -67,7 +67,9 @@ httpOnly: true,
   },
 };
 
-
+app.get("/",(req,res)=>{
+  res.render("/listings");
+ });
 
 
 
