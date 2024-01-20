@@ -13,6 +13,7 @@ const upload = multer({storage});
 
 router
 .route("/")
+.get(listingController.show)
 .get(wrapAsync(listingController.index))  //index Route
 .post(                                     //create route
     isLoggedIn,
