@@ -91,7 +91,7 @@ app.use((req,res,next)=>{
 });
 
 app.get("/", (req,res)=>{
-  res.render("listings/home.ejs")
+  res.render("./listings/home.ejs")
 });
 
 
