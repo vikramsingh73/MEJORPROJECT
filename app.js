@@ -45,7 +45,7 @@ app.engine("ejs",ejsMate);
 app.use (express.static(path.join(__dirname,"/public")));
 
 const store = MongoStore.create({
-  mongoUrl: dbUrl,
+ mongoUrl: dbUrl,
   crypto: {
     secret: process.env.SECRET,
   },
@@ -95,9 +95,9 @@ app.get("/",async(req,res)=>{
   const allListings= await Listing.find({});
  res.render ("listings/index.ejs",{allListings});
 });
-
-
-
+app.post("/facebook",(req,res)=>{
+  res.send("hello");
+});
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);

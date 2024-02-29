@@ -3,6 +3,9 @@ const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const mapToken = process.env.MAP_TOKEN;
 const geocodingClient =  mbxGeocoding({ accessToken: mapToken});
 
+
+
+
 module.exports.index = async(req,res)=>{
     const allListings= await Listing.find({});
      res.render("listings/index.ejs",{allListings});
@@ -48,6 +51,7 @@ module.exports.index = async(req,res)=>{
         newListing.owner = req.user._id;
         newListing.image = {url,filename};
         newListing.geometry = response.body.features[0].geometry;
+        newListing.categoury = response.body.categoury;
           let savedListing =  await newListing.save();
           console.log(savedListing);
 

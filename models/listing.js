@@ -38,7 +38,10 @@ const listingSchema = new Schema({
           required: true,
         },
       },
-  
+    categoury: {
+        type: String,
+        enum: ["mountains", "arctic", "farms", "desert","Rooms","Boats"]
+    }
 
 });
 

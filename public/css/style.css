@@ -25,15 +25,26 @@ flex: 1;
     color:#222222 !important;
 }
 
+.navbar-nav{
+background-color: white !important ;
+
+}
+.search-btn {
+    background-color: red;
+}
+
+
 
 /*footer*/
-.f-info-links{
+.f-info-links a {
     text-decoration: none;
     color: #222222;
-}
-.f-info-links a:hover{
+} 
+
+ .f-info-links a:hover{
     text-decoration: underline;
-}
+} 
+
 .f-info-links,
 .f-info-socials,
 .f-info-brand{
@@ -41,11 +52,23 @@ flex: 1;
     display: flex;
 align-items: center;
 justify-content: center;
+
+
+}
+.f-info-socials a {
+    text-decoration: none;
+    color: #222222;
+    letter-spacing: 10px;
+    font-size: 25px;
+    
+  
+  
 }
 
 .f-info-socials i{
     font-size: 1.2rem;
     margin-right: 1rem;
+    
 }
 
 .f-info{
@@ -56,6 +79,8 @@ justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items:space-evenly ;
+   
+   
 }
 
 /*card*/
@@ -89,12 +114,12 @@ justify-content: center;
 }
 /* new page */
 .add-btn{
-   background-color: red! important;
+   background-color: red ! important;
    border: none ! important;
 }
 /* edit page */
 .edit-btn{
-    background-color: red! important;
+    background-color: red ! important;
     border: none ! important;
  }
 
@@ -121,21 +146,24 @@ justify-content: center;
 }
 /* search Btn */
 .search-btn {
-    background-color: #fe424d;
-    color: #fff;
-    border-radius: 25px;
-    padding: 0 1rem 0 1rem;
+    background-color: #fe424d ! important;
+    color: #fff  ! important;
+    border-radius: 75px ! important ;
+    padding: 1 1rem 0 1rem  ! important;
+    
   }
   .search-btn:hover {
     background-color: #fe424d;
     color: #fff;
   }
   .search-btn i {
-    display: inline;
+    display: inline  ! important;
     margin-right: 0.5rem;
+    margin-left: 0.5rem;
+   
   }
   .search-inp {
-    border-radius: 24px;
+    border-radius: 50px ! important;
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
   }
